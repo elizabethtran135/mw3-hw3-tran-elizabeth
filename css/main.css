@@ -1,4 +1,1 @@
-#header {
-  width: 10px;
-  height: 20px;
-}
+.bordered{border-top:solid 15px #f8df1f}nav{height:100px;background-color:#f8df1f}ul li{display:inline;list-style:none}h1,h2,p,ul li,button{color:#080801;font-family:'Roboto',sans-serif}button{background-color:#f8df1f}.banner{width:100%}footer{height:100px;background-color:#080801;border-top:solid 15px #f8df1f}

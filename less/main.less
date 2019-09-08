@@ -1,6 +1,25 @@
 @import "variables";
 
-#header {
-  width: @width;
-  height: @height;
+nav {
+    height: 100px;
+    background-color: @yellow-primary;
+}
+ul li {
+  display:inline;
+  list-style: none;
+}
+h1, h2, p, ul li, button {
+  color: @black-primary;
+  font-family: 'Roboto', sans-serif;
+}
+button {
+  background-color: @yellow-primary;
+}
+.banner {
+  width: 100%;
+}
+footer {
+    height: 100px;
+    background-color: @black-primary;
+    .bordered();
 }
