@@ -1,25 +1,78 @@
 @import "variables";
 
-nav {
-    height: 100px;
-    background-color: @yellow-primary;
-}
-ul li {
-  display:inline;
-  list-style: none;
-}
+
 h1, h2, p, ul li, button {
   color: @black-primary;
   font-family: 'Roboto', sans-serif;
 }
 button {
   background-color: @yellow-primary;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .75rem;
+  border-radius: 5px;
+  padding: 3%;
+  border: none;
+
 }
-.banner {
-  width: 100%;
+span {
+  color: @red-primary;
+  text-transform: uppercase;
 }
+header {
+  nav {
+      height: 77px;
+      background-color: @yellow-primary;
+      ul {
+        padding: 31px;
+        li {
+          display:inline;
+          list-style: none;
+          margin: 5px;
+          font-size: 0.9rem;
+        }
+      }
+  }
+  h1 {
+    display: none;
+  }
+  .hero {
+    position: relative;
+    text-align: center;
+    .banner {
+      width: 100%;
+    }
+    .below-logo {
+      position: absolute;
+      bottom: 33px;
+      left: 43%;
+      display: inherit;
+      @media (min-width: 669px) {
+        left: 45%;
+      }
+      @media (min-width: 900px) {
+        left: 47%;
+        bottom: 74px;
+      }
+    }
+  }
+}
+
+.gray, .white {
+  .mainstyle();
+}
+.gray {
+  background-color: @gray-primary;
+  padding-top: 4%;
+}
+
 footer {
     height: 100px;
     background-color: @black-primary;
+    text-align: center;
     .bordered();
+    img {
+      width: 16%;
+      margin-top: 2%;
+    }
 }
